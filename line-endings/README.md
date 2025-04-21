@@ -43,7 +43,7 @@ never gonna let you down^M
 
 $ cat -e crlf.txt # shows LF
 never gonna give you up^M$
-never gonna let you down^M$
+never gonna let you down^Mt$
 ```
 
 ## how to fix line-endings
