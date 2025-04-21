@@ -1,0 +1,54 @@
+# Treat all text files as text and auto-detect line endings
+* text=auto
+
+# Ensure consistent LF line endings for source code and build scripts
+*.c     text eol=lf
+*.cpp   text eol=lf
+*.h     text eol=lf
+*.hpp   text eol=lf
+*.cc    text eol=lf
+*.hh    text eol=lf
+
+# CMake files (used on all platforms)
+CMakeLists.txt text eol=lf
+*.cmake        text eol=lf
+
+# Makefiles (Linux)
+Makefile       text eol=lf
+makefile       text eol=lf
+
+# Windows Visual Studio project files
+*.sln     text eol=crlf
+*.vcxproj text eol=crlf
+*.vcproj  text eol=crlf
+*.filters text eol=crlf
+*.props   text eol=crlf
+
+# Scripts
+*.sh   text eol=lf
+*.bat  text eol=crlf
+*.ps1  text eol=crlf
+
+# Markdown, text, and documentation
+*.md   text eol=lf
+*.txt  text eol=lf
+
+# Handle Unicode BOMs (if needed)
+*.cpp text working-tree-encoding=UTF-8
+*.h   text working-tree-encoding=UTF-8
+
+# Binary files (prevent Git from trying to modify line endings)
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.ico  binary
+*.pdf  binary
+*.zip  binary
+*.exe  binary
+*.dll  binary
+*.so   binary
+*.a    binary
+*.lib  binary
+*.obj  binary
+*.o    binary
